@@ -1,0 +1,16 @@
+server:
+  # The type of server connector. 'simple' is the default for HTTP.
+  type: simple
+  # The port the application will listen on.
+  applicationContextPath: /
+  # The port for administrative tasks.
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: 8080
+
+# Logging configuration
+logging:
+  level: INFO
+  loggers:
+    com.flipkart: DEBUG
